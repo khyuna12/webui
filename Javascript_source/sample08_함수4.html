@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 함수
+    // 함수 호출 시 인자 개수가 달라도 된다.
+    // default 파라미터 사용가능
+    // rest 파라미터 (가변인자)
+    // arrow (=>) 함수 (python의 lambda 비슷)
+
+    // 일반함수1
+    function fun(){
+      console.log("fun");
+    }
+
+    fun();
+
+    // arrow 1
+    let fun = () => {console.log("arrow fun")};
+
+    // 일반함수2
+    function fun2(n){
+      console.log("fun2", n);
+    }
+    fun2(10);
+
+    // arrow 2
+    let fun2 = (n) => {
+      console.log("arrow fun2", n);
+    }
+
+    // 괄호 생략 가능
+    let fun2 = n => {
+      console.log("arrow fun2", n);
+    }
+
+    // 일반함수3
+    function fun3(n, n2){
+      console.log("fun3", n, n2);
+    }
+
+    // arrow 3
+    let fun3 = (n,n2)=>console.log("fun3", n, n2);
+
+    // 일반함수4
+    function fun4(n, n2){
+      console.log("fun4", n, n2);
+      return n+n2;
+    }
+
+    // arrow 4
+    let fun4 = (n,n2)=>{
+      console.log("fun4", n, n2);
+      return n+n2;
+    };
+
+    function fun5(n, n2){
+      return n+n2;
+    }
+
+    // arrow 5
+    let fun5 = (n,n2)=>n+n2;
+
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

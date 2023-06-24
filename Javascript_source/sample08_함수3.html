@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 함수
+    // 함수 호출 시 인자 개수가 달라도 된다.
+    // default 파라미터 사용가능
+    // rest 파라미터 (가변인자)
+
+    // 1. 함수 선언식(이름 있는 함수)
+    function fun(n,n2){
+      console.log("fun",n,n2);
+    }
+
+    // 호출
+    fun();        // fun undefined undefined
+    fun(10);      // fun 10 undefined
+    fun(10, 20);  // fun 10 20
+
+
+
+    // 2. 함수 표현식(이름 없는 함수) ==> 변수에 저장해서 함수 사용함.
+    var fun2 = function(...n){  // rest 파라미터, 가변인자
+      console.log(n);
+    }
+
+    fun2(10);        // [10]
+    fun2(1,2,3);     // [1, 2, 3]
+    fun2(1,2,3,5,7); // [1, 2, 3, 5, 7]
+
+    // 3. 혼합
+    function fun3(n=1,n2=2, ...n3){
+      console.log(n, n2, n3)
+    }
+
+    fun3(10);        // 10 2 []
+    fun3(1,2,3);     // 1 2 [3]
+    fun3(1,2,3,5,7); // 1 2 [3, 5, 7]
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

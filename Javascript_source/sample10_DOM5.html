@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>체크 시 값 복사</title>
+  <script>
+    function check(){
+      var x = document.querySelector("#same").checked;
+      if(x){
+        document.querySelector("#address2").value = document.querySelector("#address1").value;
+      }else{
+        document.querySelector("#address2").value = "";
+      }
+      
+    }
+    
+    
+  </script>
+</head>
+<body>
+  회원주소: <input id = "address1" type="text" value="서울시 서초구"><br>
+  동일하시면 체크하시오
+  <input type="checkbox" id="same" onclick="check()">
+  <hr>
+  배송주소: <input id = "address2" type="text" value="">
+</body>
+</html>

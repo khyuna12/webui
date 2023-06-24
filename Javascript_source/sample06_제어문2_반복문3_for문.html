@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for문</title>
+  <script>
+    // while 문
+    var n = 1;
+    while(n<=5){
+      console.log("hello");  // hello 5번 출력
+      n++;
+    }
+    console.log("end")
+
+    // do while 문
+    var n = 1;
+    do{
+      console.log("hello", n);
+      n++;
+    }while(n<=5)
+    console.log("end")
+
+    // for 문
+    /*
+      for(시작값;조건식;증감식){
+        문장;
+      }
+    */
+
+    for(var n = 1;n<=5;n++){
+      console.log("hello");
+    }
+    console.log("end")
+
+    // 변형된 for문
+    for(var n = 10;n>5;n--){
+      console.log(n)
+    }
+    /* 10
+        9
+        8
+        7
+        6  */
+    
+    for(var n = 1;n<=10;n+=2){
+      console.log(n)
+    }
+    /* 1
+       3
+       5
+       7
+       9 */
+    
+    for(var n=1, n2=1; n<=10 && n2<3; n+=2, n2++){
+      console.log(n, n2)
+    }
+    /* 1 1
+       3 2 */
+
+    // 중첩 가능
+    for(var n=1; n<=5; n++){  // 5번
+      for (let m=0; m<2; m++){  // 2번
+        console.log("A")  // 10번
+      }
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

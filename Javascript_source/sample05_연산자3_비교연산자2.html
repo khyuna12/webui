@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비교연산자2</title>
+  <script>
+		console.log("10"+5);  // 105
+    console.log("10"-5);  // 5
+    console.log("10" * 5);  // 50
+    console.log("10" / 3);  // 3.333333
+    console.log("10" % 3);  // 1
+
+		console.log("equl: ", "10"==10); //true, 값만 비교
+		console.log("identical: ", "10"===10); // false, 값과 타입 모두 비교
+
+		// undefined 비교
+		var x;
+		console.log(x===undefined)  // true
+		console.log(x==undefined)   // true
+
+		var x=null;
+		console.log(x===undefined)  // false
+		console.log(x==undefined)   // true
+
+  </script>
+</head>
+<body>
+  console.log();
+</body>
+</html>

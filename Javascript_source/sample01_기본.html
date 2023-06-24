@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // head 태그에도 script 가능
+    console.log("Javascript_head");  // f12 > console에 Javascript
+  </script>
+  <!-- 외부파일 접근 -->
+  <script src="external.js"></script>  <!-- 절대경로 -->
+  <script src="./external.js"></script>  <!-- 상대경로 -->
+</head>
+<body>
+  <p>Hello</p>
+  <script>
+    // 주석
+    console.log("Javascript_body");  // f12 > console에 Javascript
+  </script>
+  <p>Hello2</p>
+  <script>
+    // 여러번 쓸 수 있음(head 태그에도 마찬가지)
+    console.log("Javascript_body_맨끝");  // f12 > console에 Javascript
+  </script>
+</body>
+</html>

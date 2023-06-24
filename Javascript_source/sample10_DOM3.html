@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 클릭 시 사진변경</title>
+  <script>
+    function img_change(f){
+      var x = document.querySelector("#img").src;
+      // console.log(x);
+      // var file = "images/" + f;
+      // console.log(file);
+      var file = `images/${f}`; // 백틱 사용시
+      document.querySelector("#img").src = file;
+    }
+    
+  </script>
+</head>
+<body>
+  <img id="img" src="images/a.jpg" width="100" height="100">
+  <button onclick="img_change('a.jpg')">a</button>  
+  <button onclick="img_change('b.jpg')">b</button>  
+  <button onclick="img_change('c.jpg')">c</button>  
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date</title>
+  <script>
+    // Data 관련 객체: 날짜 객체
+
+    // 1. 객체 생성
+    let d = new Date();
+    console.log(d)  // Thu Jun 22 2023 13:13:58 GMT+0900 (한국 표준시)
+
+    // 2. 객체의 property와 method 확인
+    // w3schools.com 확인
+    console.dir(d)
+
+    // 3. property와 method 사용
+    console.log(d.getFullYear());  // 2023
+    console.log(d.getMonth() + 1); // 6
+    console.log(d.getDate());      // 22
+
+    console.log(d.getHours());     // 13
+    console.log(d.getMinutes());   // 17
+    console.log(d.getSeconds());   // 32
+
+    // 특정 날짜 설정
+    let d2 = new Date();
+    d2.setFullYear(2033);
+    d2.setMonth(1);  // +1인 2월로 값이 나옴
+    d2.setDate(1);
+    console.log(d2);  // Tue Feb 01 2033 13:19:48 GMT+0900 (한국 표준시)
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
